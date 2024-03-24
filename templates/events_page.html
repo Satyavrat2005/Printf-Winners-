@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='events_page.css') }}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="{{ url_for('home') }}">Return To Home</a>
+        <!-- <a href="admindashboard.html">Admin</a>
+        <a href="volunteer_regis.html">Register</a> -->
+      </nav>
+    </header>
+    <section>
+      <div class="leftBox">
+        <div class="logo-container">
+          <img src="{{ url_for('static', filename='logo_bg.png') }}" class="logo">
+        </div>
+        <div class="content">
+          <h1>Events and Programs</h1>
+          <p>
+            Service to others is the rent you pay for your room here on Earth.
+          </p>
+        </div>
+      </div>
+      <div class="events">
+        <ul>
+          <li>
+            <div class="time">
+              <h2>May<br /><span>1st</span></h2>
+            </div>
+            <div class="details">
+              <h3>Book Donation Drive</h3>
+              <p>
+                Join us for a heartwarming book donation drive, spreading the
+                joy of reading to underprivileged children in our community.
+                Together, let's ignite their imaginations and empower their
+                futures. Every donated book is a step towards brighter
+                tomorrows. 
+              </p>
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>May <br /><span>4th</span></h2>
+            </div>
+            <div class="details">
+              <h3>Student Counselling</h3>
+              <p>
+                Embark on a journey of support and empowerment at our student
+                counseling event. Together, we provide a safe space for students
+                to navigate challenges, discover resilience, and thrive. Let's
+                break barriers and foster mental well-being for brighter
+                academic futures.
+              </p>
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>June<br /><span>21st</span></h2>
+            </div>
+            <div class="details">
+              <h3>Awareness Drive</h3>
+              <p>
+                Join us in exploring the frontier of educational advancements,
+                where innovation meets opportunity. Discover the latest tools,
+                methods, and technologies shaping the future of learning.
+                Together, let's raise awareness about education.
+              </p>
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <footer>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+      <span>&copy; 2023 Uddeshya</span>
+    </footer> -->
+  </body>
+</html>
